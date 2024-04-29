@@ -1,5 +1,6 @@
 Implement a design from scratch
 
+![alt text](images/headphones_hero_1.jpg)
 
 Implement a design
 
