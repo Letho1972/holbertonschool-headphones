@@ -1,8 +1,8 @@
-Implement a design from scratch
+# Implement a design from scratch
 
 ![alt text](images/headphones_hero_1.jpg)
 
-Implement a design
+## Implement a design
 
 Figma will be your friend!
 
