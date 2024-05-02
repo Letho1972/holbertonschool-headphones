@@ -1,0 +1,151 @@
+/* SUMMARY
+1. GLOBAL
+2. LAYOUT
+3. SECTION
+4. FREE
+*/
+
+/*** 1. GLOBAL ***/
+
+/* Reset/ Normalize ============================ */
+
+/*! normalize.css v8.0 | MIT License | github.com//normalize.css */
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+/** SECTION **/
+
+.html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    background-size: cover;
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-position: topcenter;
+}
+
+main {
+    display: block;
+
+    /*button Styles */
+
+    .btn {
+        background: #ff6565;
+        color: white;
+        padding: 13px 31px;
+        border-radius: 30px;
+        border: 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #a44040;
+    }
+
+    .header {
+        padding: 30px 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo img {
+        width: 114px;
+    }
+
+    .menu-btn {
+        display: none;
+
+        /** Mobile MENU STYLES **/
+        @media (max-width: 480px) {
+            .menu-btn {
+                display: block;
+            }
+
+            .navbar-menu {
+                display: none;
+            }
+
+            .menu-btn:checked~.navbar-menu {
+                display: block;
+            }
+
+        }
+    }
+
+}
+
+
+
+/*** 2. LAYOUT ***/
+
+/* layout ======= */
+
+
+/* Styles du menu principal */
+
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 370px;
+    text-align: center;
+}
+
+.main-part h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-part div {
+    margin: 40px 0;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: #c9C9C9;
+    width: 630px;
+
+    /** Responsive Styles **/
+
+    @media (max-width: 767px) {
+        .header {
+            padding: 30px 66px;
+        }
+
+        .main-part {
+            padding: 0 66px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 30px 20px;
+        flex-direction: column;
+    }
+
+    .header-logo {
+        margin-bottom: 20px;
+    }
+
+    .main-part {
+        padding: 0 9px;
+    }
+}
