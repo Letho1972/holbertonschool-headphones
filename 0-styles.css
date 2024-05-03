@@ -68,6 +68,57 @@ main {
         width: 114px;
     }
 
+    .input-burger {
+        visibility: hidden;
+    }
+
+
+    .navicon {
+        background: #ffffff;
+        display: block;
+        height: 2px;
+        width: 15px;
+        position: relative;
+        border-radius: 100px;
+    }
+
+    .navicon:before {
+        top: 5px;
+    }
+
+    .navicon:after {
+        top: -5px;
+    }
+    
+    .navicon:before,
+    .navicon:after {
+        background: white;
+        display: block;
+        width: 20px;
+        height: 100%;
+        content: "";
+        position: absolute;
+        transition: all 0.2s ease-out;
+    }
+
+    .input-burger:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+    
+    .input-burger:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .input-burger:checked .navicon{
+        background-color: transparent;
+    }
+
+    .input-burger:checked ~ .menu-icon .navicon:before,
+    .input-burger:checked ~ .menu-icon .navicon:after 
+    {
+        top: 0;
+    }
+
     .menu-btn {
         display: none;
 
