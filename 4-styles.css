@@ -520,10 +520,50 @@ p {
         align-items: center;
         background-color: #FFF;
     }
-    /******.contact_us h1 {
-        margin-top: 7rem;/*****
+    .contact_us h1 {
+        margin-top: 7rem;
+        color: var(--color-text);
+        font-size: 32px;
+        font-style: semi-bold;
+        font-weight: 600;
+        line-height: normal;
+        max-width: 40rem;
+        margin-bottom: 50px;
+    }
+    .contact_us li {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin-bottom: 1.5rem;
+        padding-left: 0;
+    }
+    .contact_us label {
+        display: flex;
+        color: var(--font-sourcesanspro);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .contact_us form {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 40rem;
+        top: 10px;
+        margin-bottom: 1.5rem;
 
     }
+    .contact_us input {
+        display: flex;
+        justify-content: flex-start;
+        border: 0px;
+        border-bottom: 1px solid #071629;
+        opacity: 0.1745;
+        margin: 0;
+    }
+
+    /*****   contact us textarea *****/
 }
 
     
