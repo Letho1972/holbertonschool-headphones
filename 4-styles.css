@@ -72,7 +72,10 @@ p {
 /*** Background headphone ****/
 
 .background-image {
-    background: url("images/headphones_hero_1.jpg") no repeat center center fixed;
+
+    
+
+    background: url("./images/headphones_hero_1.jpg") no repeat center center fixed;
     background-size: cover;
     text-align: center;
     max-width: 1400px;
@@ -85,6 +88,7 @@ p {
 /*** Header****/
 
 .header-container {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +133,7 @@ p {
 
 }
 
-.nav li: first-child {
+.nav li:first-child {
     margin-left: 0;
 }
 
@@ -265,7 +269,7 @@ p {
     }
 
     .nav ul.active {
-        display flex;
+        display: flex;
     }
 
     @media screen and (max-width: 375px) {
@@ -294,7 +298,7 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gag: 2.5rem;
+        gap: 2.5rem;
     }
 
     .section-text h1 {
@@ -361,8 +365,10 @@ p {
         padding: 0 1.25rem;
     }
 
-    @media screen and (max-width: 767px) .icon_what_we_do {
-        flex-direction: column;
+    @media screen and (max-width: 767px) {
+        .icon_what_we_do div {
+            flex-direction: column;
+        }
     }
 
     .icon_what_we_do div {
@@ -386,175 +392,212 @@ p {
         padding: 0;
     }
 
-    @media screen and (max-width: 375px) .icon_what_we_do h2 {
-        font-size: 1rem;
+    @media screen and (max-width: 375px) {
+        .icon_what_we_do h2 {
+            font-size: 1rem;
 
+        }
     }
 
     .icon_what_we_do p {
         font-size: 0.75rem;
     }
-}
-/**** Ma section our results *****/
 
-.our_results {
-    display: block;
-    text-align: center;
-}
-.our_results_container {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("/images/headphones_hero_2.jpg") no-repeat center center;
-    background-size: cover;
-    min-height: 650px;
-}
-.section-text-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    color: #FFF;
-  
-}
-.section-text-1 h1 {
-    margin-top: 7rem;
-    color: var(--color-text);
-    font-size: 2rem;
-    font-size: normal;
-    font-weight: 600;
-    line-height: normal;
-    max-width: 40rem;
-}
-.section-text-1 p {
-    color: var(--color-text);
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.625rem; /* 162.5% */
-    max-width:40rem;
-    padding: 0 1.25rem;
-}
-.pentagon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
-.pentagon img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+    /**** Ma section our results *****/
 
-.pentagon-item {
-    position: relative;
-    width: 190px;
-    margin: 20px;
-}
+    .our_results {
+        display: block;
+        text-align: center;
+    }
 
-.grow {
-    position:absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.grow h2 {
-    color: var(color-text);
-    text-align: center;
-    align-items: center;
-    font-size: 46px;
-    font-style: bold;
-    margin: 0;
-    z-index: 1;
-}
-.grow p {
-    color: var(--color-text);
-    text-align: center;
-    align-items: center;
-    font-size: 14px;
-    font-style: normal;
-}
-@media screen and (max-width: 767px) {
-    .pentagon {
+    .our_results_container {
+        display: block;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url("./images/headphones_hero_2.jpg") no-repeat center center;
+        background-size: cover;
+        min-height: 650px;
     }
-    .pentagon img {
-        margin: 0;
-    }
-    .pentagon img:first-child {
-        margin-top: 0;
-    }
-    .pentagon img:last-child {
-        margin-bottom: 0;
-    }
-    .grow h2 {
-        padding: 0;
-    }
-    .grow p {
-        margin-bottom: 0;
-        padding: 0;
-    }
-}
-@media screen and (max-width: 375px) {
-    .grow h2 {
-        font-size: 1.5rem;
-    }
-    .grow p {
-        font-size: 0.875rem;
-    }
-    /**** Contact us ****/
 
-    .contact_us {
+    .section-text-1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #FFF;
+        gap: 2.5rem;
+        color: #FFF;
+
     }
-    .contact_us h1 {
+
+    .section-text-1 h1 {
         margin-top: 7rem;
         color: var(--color-text);
-        font-size: 32px;
-        font-style: semi-bold;
+        font-size: 2rem;
+        font-size: normal;
         font-weight: 600;
         line-height: normal;
         max-width: 40rem;
-        margin-bottom: 50px;
     }
-    .contact_us li {
+
+    .section-text-1 p {
+        color: var(--color-text);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.625rem;
+        /* 162.5% */
+        max-width: 40rem;
+        padding: 0 1.25rem;
+    }
+
+    .pentagon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .pentagon img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .pentagon-item {
+        position: relative;
+        width: 190px;
+        margin: 20px;
+    }
+
+    .grow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         display: flex;
         flex-direction: column;
-        list-style-type: none;
-        margin-bottom: 1.5rem;
-        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-    .contact_us label {
-        display: flex;
-        color: var(--font-sourcesanspro);
+
+    .grow h2 {
+        color: var(color-text);
+        text-align: center;
+        align-items: center;
+        font-size: 46px;
+        font-style: bold;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .grow p {
+        color: var(--color-text);
+        text-align: center;
+        align-items: center;
         font-size: 14px;
         font-style: normal;
-        font-weight: 600;
     }
-    .contact_us form {
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        max-width: 40rem;
-        top: 10px;
-        margin-bottom: 1.5rem;
 
+    @media screen and (max-width: 767px) {
+        .pentagon {
+            flex-direction: column;
+        }
+
+        .pentagon img {
+            margin: 0;
+        }
+
+        .pentagon img:first-child {
+            margin-top: 0;
+        }
+
+        .pentagon img:last-child {
+            margin-bottom: 0;
+        }
+
+        .grow h2 {
+            padding: 0;
+        }
+
+        .grow p {
+            margin-bottom: 0;
+            padding: 0;
+        }
     }
-    .contact_us input {
+
+    @media screen and (max-width: 375px) {
+        .grow h2 {
+            font-size: 1.5rem;
+        }
+
+        .grow p {
+            font-size: 0.875rem;
+        }
+
+        /**** Contact us ****/
+
+        .contact_us {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFF;
+        }
+
+        .contact_us h1 {
+            margin-top: 7rem;
+            color: var(--color-text);
+            font-size: 32px;
+            font-style: semi-bold;
+            font-weight: 600;
+            line-height: normal;
+            max-width: 40rem;
+            margin-bottom: 50px;
+        }
+
+        .contact_us li {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+            padding-left: 0;
+        }
+
+        .contact_us label {
+            display: flex;
+            color: var(--font-sourcesanspro);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+        }
+
+        .contact_us form {
+            align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            max-width: 40rem;
+            top: 10px;
+            margin-bottom: 1.5rem;
+
+        }
+
+        .contact_us input {
+            display: flex;
+            justify-content: flex-start;
+            border: 0px;
+            border-bottom: 1px solid #071629;
+            opacity: 0.1745;
+            margin: 0;
+        }
+
+        /*****   contact us textarea *****/
+    }
+
+    .contact_us textarea {
         display: flex;
         justify-content: flex-start;
         border: 0px;
@@ -563,10 +606,140 @@ p {
         margin: 0;
     }
 
-    /*****   contact us textarea *****/
-}
+    .contact_us button {
+        width: 10rem;
+        height: 2.75rem;
+        flex-shrink: 0;
+        border-radius: 1.5rem;
+        background: var(--primary-color);
+        border: 0;
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-style: bold;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 8rem;
 
-    
-}
-}
+    }
 
+    .contact_us button:hover {
+        opacity: 0.9;
+    }
+
+    @media screen and (max-width: 767px) {
+        .contact_us form {
+            max-width: 20rem;
+        }
+
+    }
+
+    .contact_us button {
+        width: 8rem;
+        height: 2.5rem;
+    }
+
+    @media screen and (max-width: 375px) {
+        .contact_us h1 {
+            font-size: 1.5rem;
+        }
+
+        .contact_us label {
+            font-size: 0.875rem;
+        }
+
+        .contact_us input {
+            font-size: 0.875rem;
+        }
+
+        .contact_us textarea {
+            font-size: 0.875rem;
+        }
+
+        .contact_us button {
+            font-size: 0.875rem;
+        }
+    }
+
+    /*****  Mon Footer=======******/
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        align-items: center;
+        padding: 20px;
+        height: 249px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 50px;
+
+    }
+
+    .footer-logo {
+        display: flex;
+        height: 32px;
+        padding-left: 20px;
+    }
+
+    .social-icon a {
+        padding-right: 20px;
+    }
+
+    .social-icon img {
+        height: 30px;
+        /**** fix based icon size *****/
+    }
+
+    footer .copyright {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+        padding-top: 120px;
+    }
+
+    @media screen and (max-width: 767px) {
+        footer {
+            height: 249px;
+        }
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+    }
+
+    footer .footer-logo {
+        padding-left: 0;
+    }
+
+    footer .social-icon {
+        padding-right: 0;
+    }
+
+    footer .social-icon img {
+        height: 30px;
+    }
+
+    footer .copyright {
+        padding-top: 0;
+    }
+
+    @media (max-width: 375px) {
+        footer .social-icon img {
+            height: 30px;
+        }
+
+    }
+
+    footer .footer-logo img {
+        width: 80%;
+    }
+}
