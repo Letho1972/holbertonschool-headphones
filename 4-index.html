@@ -1,54 +1,83 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/4-styles.css">
-    <title>My first webdesign</title>
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Create a web site from scratch">
+    <meta name="author" content="Elodie Riou">
+    <title>My first Webdesign</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./4-styles.css">
+    <link rel="stylesheet" href="holberton_school-icon/style.css">-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./4-styles.css">
+        <title>Headphones</title>
+    </head>
+    
+    <main>
+        <style>
+            body {
+                background-image: url('./images/headphones_hero_1.jpg');
+                /* Ajoutez d'autres propriétés CSS pour définir le comportement de l'image */
+                background-size: cover;
+                /* Pour couvrir toute la zone */
+                background-position: center;
+                /* Pour centrer l'image */
+                /* Vous pouvez également ajouter d'autres propriétés comme la répétition */
+                background-repeat: no-repeat;
+
+            }
+        </style>
 </head>
 
 <body>
 
+
+    <!--Header-->
     <div class="background-image">
-        <!--Header-->
         <header class="header">
-            <div class="container">
-                <div class="header-logo">
-                    <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn">
-                </div>
+            <div class="container"></div>
+            <div class="header-logo"></div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" name="menu-btn">
+
+
+
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></label></span></label>></label>
+            <div class="logo"><a href="#"><img src="./images/logo_headphones.png" alt="logo"></a></div>
+
+
+
+            <div class="menu">
+                <ul class="nav"></ul>
             </div>
-    </div>
-    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></label></span></label>></label>
-    <div class="logo"><a href="#"><img src="./images/logo_headphones.png" alt="logo"></a></div>
+
+            <li>
+                <a href="#what_we_do" style="text-decoration:none">what we do</a>
+
+            </li>
 
 
+            <li>
+                <a href="#our_results" style="text-decoration:none">our results</a>
 
-    <div class="menu">
-        <ul class="nav"></ul>
-    </div>
+            </li>
 
-    <li>
-        <a href="#what_we_do" style="text-decoration:none">what we do</a>
+            <li>
+                <a href="#contact_us" style="text-decoration:none">contact us</a>
 
-    </li>
-
-
-    <li>
-        <a href="#our_results" style="text-decoration:none">our results</a>
-
-    </li>
-
-    <li>
-        <a href="#contact_us" style="text-decoration:none">contact us</a>
-
-    </li>
+            </li>
 
 
-    </header>
+        </header>
 
-    <!-- Hero -->
-    <main>
+        <!-- Hero -->
+
         <div class="hero">
             <div class="hero-text">
             </div>
@@ -173,27 +202,28 @@
                 <button type="submit">CALL TO ACTION</button>
             </div>
         </section>
-    </main>
+        </main>
 
-    <!--Footer-->
+        <!--Footer-->
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="/images/logo_headphones.png" alt="logo">
-                <div class="social-icon">
-                    <a href="https://Facebook.com" target="_blank"><img src="/images/Facebook_White.png" alt=""></a>
-                    <a href="https://Twitter.com" target="_blank"><img src="/images/Twitter.png" alt=""></a>
-                    <a href="https://Tnstagram.com" target="_blank"><img src="/images/Instagramm_White.png" alt=""></a>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="/images/logo_headphones.png" alt="logo">
+                    <div class="social-icon">
+                        <a href="https://Facebook.com" target="_blank"><img src="/images/Facebook_White.png" alt=""></a>
+                        <a href="https://Twitter.com" target="_blank"><img src="/images/Twitter.png" alt=""></a>
+                        <a href="https://Tnstagram.com" target="_blank"><img src="/images/Instagramm_White.png"
+                                alt=""></a>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p class="copyright">headphones 2020</p>
-            </div>
+                <div>
+                    <p class="copyright">headphones 2020</p>
+                </div>
 
-        </div>
-    </footer>
-
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
