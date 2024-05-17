@@ -192,7 +192,7 @@ main {
 
     /** Responsive Styles **/
 
-    @media (max-width: 767px) {
+@media (max-width: 767px) {
         .header {
             padding: 30px 66px;
         }
