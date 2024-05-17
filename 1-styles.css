@@ -73,7 +73,7 @@ p {
 
 .background-image {
 
-    
+
 
     background: url("./images/headphones_hero_1.jpg") no repeat center center fixed;
     background-size: cover;
@@ -88,7 +88,7 @@ p {
 /*** Header****/
 
 .header-container {
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -397,9 +397,10 @@ p {
             font-size: 1rem;
 
         }
-    
 
-    .icon_what_we_do p {
-        font-size: 0.75rem;
+
+        .icon_what_we_do p {
+            font-size: 0.75rem;
+        }
     }
 }
